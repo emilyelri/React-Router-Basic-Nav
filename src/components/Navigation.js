@@ -1,14 +1,8 @@
 import React from 'react';
-import {Route, Link} from 'react-router-dom';
-
-import Home from "./Home";
-import About from "./About"
-import Contact from "./Contact";
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
-
   return (
-
     <div>
       <div className="App">
         <h1>React Router Mini</h1>
@@ -22,9 +16,6 @@ const Navigation = () => {
           <Link to="/contact">Contact</Link>
         </div>
       </div>
-      <Route exact path="/" components = {Home} />
-      <Route path="/about" components = {About} />
-      <Route path="/contact" components = {Contact} />
     </div>
   );
 };
